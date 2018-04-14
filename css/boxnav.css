@@ -1,0 +1,22 @@
+.boxmodel-nav nav {
+    margin: 20px 50px;
+    width:150px;
+}
+.list0 ul {
+    border:1px solid #f00;
+    border-radius:3px;
+    padding:5px 10px 3px;
+}
+.list0 li {
+    list-style-type:none;
+    padding:3px 10px;
+}
+.list0 li + li {
+    border-top:1px solid #f00;
+}
+.list0 a {
+    text-decoration:none;
+    font-size:1em;
+    font-weight:400;
+    color:#000;
+}

@@ -2,10 +2,41 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 	<title>{{ page.title }}</title>
+	<link rel="stylesheet" href="/css/index.css" />
+	<link rel="stylesheet" href="/css/adaptation.css" />
 </head>
 <body>
-	{{ content }}	
+	<div id="topbar">
+		<div class="btn-bar">
+			<i></i>
+		</div>
+		<h1>Dakeng</h1>
+	</div>
+	<div id="sidebar" class="behavior_1">
+		<div id="about">
+			<div class="headshot"></div>
+			<div class="intro">
+				<p>Dakeng</p>
+				<p>好好学习，天天向上</p>
+			</div>
+			<nav class="navigation">
+				<ul>
+					<li>
+						<a href="">主页</a>
+						<a href="">分类</a>
+						<a href="">关于</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div id="sidebar-mark" style="display: none;"></div>
+	<div id="main">
+		{{ content }}
+	</div>
+	<script type="text/javascript" src="/script/clickTopbar.js"></script>
 </body>
 </html>
 
