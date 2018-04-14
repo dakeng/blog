@@ -1,3 +1,4 @@
+/*
 @media screen and (max-width: 1024px) and (min-width: 769px){
 	#sidebar{
 		width: 75px;
@@ -32,7 +33,7 @@
 		margin-left: 75px;
 	}
 }
-
+*/
 @media screen and (max-width: 768px){
 	#sidebar.behavior_1 {
 	    -webkit-transform: translate3D(-250px,0,0);
