@@ -4,11 +4,21 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
 ---
-<h2>{{ page.title }}</h2>
+<section id="page-index" >
+		<ul>
+			{% for post in site.posts %}
+			<li>
+				<article class="post">
+						<h1 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+						<div class="entry-content">
+							{{ post.entry }}
+							<p class="more">
+								<a href="{{ site.baseurl }}{{ post.url }}">阅读全文</a>
+							</p>
+						</div>
+				</article>
+			</li>
+			{% endfor %}
+		</ul>
+</section>
 
-<p>最新文章</p>
-<ul>
-	{% for post in site.posts %}
-	<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-	{% endfor %}
-</ul>
